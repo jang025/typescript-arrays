@@ -246,9 +246,10 @@ Complete Exercise 15 in the space below:
 let total: number = 0;
 // goes over length of outer 2d array
 for (let i = 0; i < numArrays.length; i++) {
+  const row = numArrays[i];
   // goes over length of inner array , specifically the length of each individual array
-  for (let j = 0; j < numArrays[i].length; j++) {
-    // adding each number within each individual array to the total variable
+  for (let j = 0; j < row.length; j++) {
+    // adding each number within each individual row to the total variable
     total += numArrays[i][j];
   }
 }
